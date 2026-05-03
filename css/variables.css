@@ -1,0 +1,43 @@
+:root {
+    --color-cream:#F5EFE6;
+    --color-sage-light:#B0D9B1;
+    --color-green-dark:#1A4D2E;
+    --color-green-black:#163020;
+    --color-white: #FFFFFF;
+    --color-text: #1A1A1A;
+
+    --font-heading: 'Outfit', sans-serif;
+    --font-body: 'Outfit', sans-serif;
+    --font-accent: 'Playfair Display', serif;
+
+    --fs-display: clamp(2rem, 5vw, 4.5rem);
+    --fs-heading: clamp(2rem, 4vw, 3.5rem);
+    --fs-subheading: clamp(1.1rem, 2vw, 1.4rem);
+    --fs-body: 1.125rem;
+    --fs-small: 0.8rem;
+    --fs-eyebrow: 0.75rem;
+
+    --fw-light:   300;
+    --fw-regular: 400;
+    --fw-bold:    700;
+    --fw-heavy:   800;
+
+    --lh-heading: 1.1;
+    --lh-body:    1.65;
+
+    --space-xs: 0.5rem;
+    --space-sm: 1rem;
+    --space-md: 2rem;
+    --space-lg: 4rem;
+    --space-xl: 6rem;
+
+    --section-pad: clamp(2rem, 5vw, 4rem);
+
+    --container-max: 1100px;
+    --container-padding: var(--space-md);
+
+    --transition-fast: 150ms ease;
+    --transition-normal: 300ms ease;
+
+    --shadow-soft: 0 10px 30px rgba(0, 0, 0, 0.08);
+}

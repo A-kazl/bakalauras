@@ -1,0 +1,106 @@
+<!DOCTYPE html>
+<html lang="lt">
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>Miškėnai | Kontaktai</title>
+        <link rel="stylesheet" href="css/variables.css">
+        <link rel="stylesheet" href="css/base.css">
+        <link rel="stylesheet" href="css/kontaktai.css">
+        <link rel="preconnect" href="https://fonts.googleapis.com">
+        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+        <link href="https://fonts.googleapis.com/css2?family=Outfit:wght@300;400;700;800&family=Playfair+Display:wght@400;700&display=swap" rel="stylesheet">
+    </head>
+
+    <body>
+        <a href="#main-content" class="skip-link">Pereiti į pagrindinį turinį</a>
+
+        <header>
+            <div class="navbar">
+                <a class="brand" href="index.html" aria-label="Miškėnai — pradinis puslapis">
+                    <img src="img/pagrindinis/logo2.png" alt="Miškėnai logotipas" class="logo">
+                </a>
+
+                <button class="nav-toggle"
+                        aria-label="Atidaryti meniu"
+                        aria-expanded="false"
+                        aria-controls="main-nav">
+                    <span></span><span></span><span></span>
+                </button>
+
+                <nav id="main-nav" aria-label="Pagrindinis meniu">
+                    <a href="index.html">Pagrindinis</a>
+                    <a href="identitetas.html">Identitetas</a>
+                    <a href="atributika.html">Atributika</a>
+                    <a href="kontaktai.html">Kontaktai</a>
+                </nav>
+            </div>
+        </header>
+
+        <main id="main-content">
+            <section class="contact" aria-labelledby="contact-heading">
+                <div class="contact-container">
+
+                    <div class="contact-info">
+                        <h1 id="contact-heading">Susisiekite su mumis</h1>
+                        <p>Turite klausimų ar norite sužinoti daugiau? Parašykite mums ir atsakysime kuo greičiau.</p>
+                        <ul class="contact-details" aria-label="Kontaktinė informacija">
+                            <li>
+                                <span class="contact-label">El. paštas</span>
+                                <a href="mailto:info@miskenai.lt">info@miskenai.lt</a>
+                            </li>
+                            <li>
+                                <span class="contact-label">Telefonas</span>
+                                <a href="tel:+37068454321">+37068454321</a>
+                            </li>
+                            <li>
+                                <span class="contact-label">Adresas</span>
+                                <address style="font-style:normal">Ukmergės g. 123, Vilnius</address>
+                            </li>
+                        </ul>
+                    </div>
+
+                    <form class="contact-form" id="contactForm" novalidate>
+
+                        <div class="form-group">
+                            <label for="name">Vardas *</label>
+                            <input type="text" id="name" name="name" placeholder="Jūsų vardas" autocomplete="given-name">
+                            <span class="field-error" id="name-error"></span>
+                        </div>
+
+                        <div class="form-group">
+                            <label for="email">El. paštas *</label>
+                            <input type="email" id="email" name="email" placeholder="jusu@pastas.lt" autocomplete="email">
+                            <span class="field-error" id="email-error"></span>
+                        </div>
+
+                        <div class="form-group">
+                            <label for="subject">Tema</label>
+                            <input type="text" id="subject" name="subject" placeholder="Žinutės tema">
+                        </div>
+
+                        <div class="form-group">
+                            <label for="message">Žinutė *</label>
+                            <textarea id="message" name="message" rows="5" placeholder="Jūsų žinutė..."></textarea>
+                            <span class="field-error" id="message-error"></span>
+                        </div>
+
+                        <button type="submit" class="btn-submit">Siųsti žinutę</button>
+                        <p class="form-status" id="formStatus"></p>
+
+                    </form>
+                </div>
+            </section>
+        </main>
+
+        <footer>
+            <div class="footer">
+                <div class="footer-left">
+                    <p>&copy; 2030 Miškėnai</p>
+                </div>
+            </div>
+        </footer>
+
+        <script type="module" src="main.js"></script>
+    </body>
+</html>

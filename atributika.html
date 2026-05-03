@@ -1,0 +1,93 @@
+<!DOCTYPE html>
+<html lang="lt">
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>Miškėnai | Atributika</title>
+        <link rel="stylesheet" href="css/variables.css">
+        <link rel="stylesheet" href="css/base.css">
+        <link rel="stylesheet" href="css/atributika.css">
+        <link rel="preconnect" href="https://fonts.googleapis.com">
+        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+        <link href="https://fonts.googleapis.com/css2?family=Outfit:wght@300;400;700;800&family=Playfair+Display:wght@400;700&display=swap" rel="stylesheet">
+    </head>
+
+    <body>
+        <a href="#main-content" class="skip-link">Pereiti į pagrindinį turinį</a>
+
+        <header>
+            <div class="navbar">
+                <a class="brand" href="index.html" aria-label="Miškėnai — pradinis puslapis">
+                    <img src="img/pagrindinis/logo2.png" alt="Miškėnai logotipas" class="logo">
+                </a>
+
+                <button class="nav-toggle"
+                        aria-label="Atidaryti meniu"
+                        aria-expanded="false"
+                        aria-controls="main-nav">
+                    <span></span><span></span><span></span>
+                </button>
+
+                <nav id="main-nav" aria-label="Pagrindinis meniu">
+                    <a href="index.html">Pagrindinis</a>
+                    <a href="identitetas.html">Identitetas</a>
+                    <a href="atributika.html">Atributika</a>
+                    <a href="kontaktai.html">Kontaktai</a>
+                </nav>
+            </div>
+        </header>
+
+        <main id="main-content">
+
+            <section class="shop">
+                <div class="shop-header">
+                    <h1>Atributika</h1>
+                </div>
+
+                <div class="shop-grid">
+                    <div class="product-row">
+                        <div class="product-card dark">
+                            <span class="card-label">Daugkartinis maišelis</span>
+                            <div class="card-body">
+                                <img src="img/atributika/maisas.png" alt="Daugkartinis maišelis" class="img-large">
+                                <p class="card-price">25.00 EUR</p>
+                            </div>
+                        </div>
+                        <div class="product-card sage">
+                            <span class="card-label">Gertuvė</span>
+                            <div class="card-body">
+                                <img src="img/atributika/gertuve.png" alt="Gertuvė">
+                                <p class="card-price">10.00 EUR</p>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="product-card dark">
+                        <span class="card-label">Kepurės</span>
+                        <div class="card-body caps">
+                            <div class="cap">
+                                <img src="img/atributika/kepure1.png" alt="Kepurė smėlio spalvos">
+                                <p class="card-price">12.00 EUR</p>
+                            </div>
+                            <div class="cap">
+                                <img src="img/atributika/kepure2.png" alt="Kepurė žalios spalvos">
+                                <p class="card-price">12.00 EUR</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </section>
+
+        </main>
+
+        <footer>
+            <div class="footer">
+                <div class="footer-left">
+                    <p>&copy; 2030 Miškėnai</p>
+                </div>
+            </div>
+        </footer>
+
+        <script type="module" src="main.js"></script>
+    </body>
+</html>

@@ -1,0 +1,106 @@
+.shop {
+    background: var(--color-cream);
+    padding: var(--space-md);
+}
+
+.shop-header {
+    text-align: center;
+    padding: var(--space-md) 0 var(--space-lg);
+}
+
+.shop-header h1 {
+    font-size: clamp(2rem, 5vw, 3.5rem);
+    font-weight: var(--fw-heavy);
+    color: var(--color-green-dark);
+}
+
+.shop-grid {
+    max-width: 900px;
+    margin: 0 auto;
+    display: flex;
+    flex-direction: column;
+    gap: 0.5rem;
+}
+
+.product-row {
+    display: grid;
+    grid-template-columns: 3fr 2fr;
+    gap: 0.5rem;
+}
+
+.product-card {
+    display: flex;
+    border-radius: 6px;
+    overflow: hidden;
+    min-height: 280px;
+}
+
+.product-card.dark { background: var(--color-green-dark); }
+.product-card.sage { background: var(--color-sage-light); }
+
+.card-label {
+    writing-mode: vertical-lr;
+    transform: rotate(180deg);
+    padding: 1.25rem 0.75rem;
+    font-weight: var(--fw-bold);
+    font-size: 1.3rem;
+    white-space: nowrap;
+    border-right: 1px solid rgba(255, 255, 255, 0.2);
+}
+
+.product-card.dark .card-label { color: var(--color-cream); }
+.product-card.sage .card-label { color: var(--color-green-dark); border-right-color: rgba(0,0,0,0.15); }
+
+.card-body {
+    flex: 1;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: flex-end;
+    padding: 1.5rem 1.5rem 1.25rem;
+    gap: 1rem;
+}
+
+.card-body img {
+    max-height: 220px;
+}
+
+.card-body img.img-large {
+    max-height: 300px;
+}
+
+.card-price {
+    font-size: 1.8rem;
+    font-weight: var(--fw-heavy);
+    color: var(--color-cream);
+    align-self: center;
+}
+
+.product-card.sage .card-price { color: var(--color-green-dark); }
+
+/* caps row */
+.card-body.caps {
+    flex-direction: row;
+    align-items: flex-end;
+    justify-content: center;
+    gap: 10rem;
+}
+
+.cap {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 0.75rem;
+}
+
+.cap img {
+    max-height: 250px;
+    width: auto;
+    object-fit: contain;
+    flex: unset;
+}
+
+@media (max-width: 600px) {
+    .product-row { grid-template-columns: 1fr; }
+    .card-body.caps { flex-direction: column; align-items: center; }
+}
